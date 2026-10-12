@@ -1,4 +1,3 @@
-import React from 'react';
 import { ShieldCheck, Gavel, Calendar, ArrowRight } from 'lucide-react';
 
 export default function App() {
