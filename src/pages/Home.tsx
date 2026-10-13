@@ -13,14 +13,14 @@ export default function Home() {
   return (
     <div className="space-y-16 py-8">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 pt-12 pb-20 border-b border-slate-800">
+      <section className="relative overflow-hidden bg-gradient-to-bottom from-slate-900 via-slate-950 to-slate-950 pt-12 pb-20 border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950 border border-cyan-800 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
             AMKA Sourcing AND Service
           </div>
           <h1 className="text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight">
             CONECTANDO SOLUCIONES, <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-right from-cyan-400 via-blue-500 to-indigo-400">
               IMPULSANDO NEGOCIOS
             </span>
           </h1>
@@ -63,7 +63,7 @@ export default function Home() {
 
       {/* ¿Quiénes Somos & Compromiso? */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-r from-slate-900 to-slate-950 border border-slate-800 rounded-3xl p-8 sm:p-12 grid md:grid-cols-2 gap-8">
+        <div className="bg-gradient-to-right from-slate-900 to-slate-950 border border-slate-800 rounded-3xl p-8 sm:p-12 grid md:grid-cols-2 gap-8">
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-white">¿Quiénes Somos?</h3>
             <p className="text-slate-400 text-sm leading-relaxed">
