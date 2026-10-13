@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { ShieldCheck, Gavel, Newspaper, Home } from 'lucide-react';
+import { ShieldCheck, Newspaper, Home } from 'lucide-react';
 
 export default function Navbar() {
   const location = useLocation();
@@ -25,17 +25,6 @@ export default function Navbar() {
               }`}
             >
               <Home size={16} /> Inicio
-            </Link>
-
-            <Link
-              to="/subastas"
-              className={`px-3 py-2 rounded-xl text-sm font-medium flex items-center gap-2 transition-all ${
-                isActive('/subastas') 
-                  ? 'bg-amber-600 text-white' 
-                  : 'text-slate-300 hover:bg-slate-800 hover:text-white'
-              }`}
-            >
-              <Gavel size={16} /> Subastas
             </Link>
 
             <Link
