@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import Noticias from './pages/Noticias';
 
@@ -14,6 +15,7 @@ export default function App() {
             <Route path="/noticias" element={<Noticias />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </Router>
   );
