@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { ShieldCheck, Gavel, Calendar, Home } from 'lucide-react';
+import { ShieldCheck, Gavel, Newspaper, Home } from 'lucide-react';
 
 export default function Navbar() {
   const location = useLocation();
@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2">
-            <ShieldCheck className="text-indigo-500" size={28} />
+            <ShieldCheck className="text-amber-500" size={28} />
             <span className="text-xl font-black tracking-tight text-white">AMKA</span>
           </Link>
 
@@ -20,7 +20,7 @@ export default function Navbar() {
               to="/"
               className={`px-3 py-2 rounded-xl text-sm font-medium flex items-center gap-2 transition-all ${
                 isActive('/') 
-                  ? 'bg-indigo-600 text-white' 
+                  ? 'bg-amber-600 text-white' 
                   : 'text-slate-300 hover:bg-slate-800 hover:text-white'
               }`}
             >
@@ -31,7 +31,7 @@ export default function Navbar() {
               to="/subastas"
               className={`px-3 py-2 rounded-xl text-sm font-medium flex items-center gap-2 transition-all ${
                 isActive('/subastas') 
-                  ? 'bg-indigo-600 text-white' 
+                  ? 'bg-amber-600 text-white' 
                   : 'text-slate-300 hover:bg-slate-800 hover:text-white'
               }`}
             >
@@ -39,14 +39,14 @@ export default function Navbar() {
             </Link>
 
             <Link
-              to="/convenios"
+              to="/noticias"
               className={`px-3 py-2 rounded-xl text-sm font-medium flex items-center gap-2 transition-all ${
-                isActive('/convenios') 
-                  ? 'bg-indigo-600 text-white' 
+                isActive('/noticias') 
+                  ? 'bg-amber-600 text-white' 
                   : 'text-slate-300 hover:bg-slate-800 hover:text-white'
               }`}
             >
-              <Calendar size={16} /> Convenios
+              <Newspaper size={16} /> Noticias y Metales
             </Link>
           </div>
         </div>
