@@ -1,4 +1,4 @@
-import { ShieldCheck, Wrench, Settings, Cpu, Truck, CheckCircle2, Phone, Mail, MapPin } from 'lucide-react';
+import { ShieldCheck, Wrench, Settings, Cpu, Truck, CheckCircle2} from 'lucide-react';
 
 export default function Home() {
   const servicios = [
