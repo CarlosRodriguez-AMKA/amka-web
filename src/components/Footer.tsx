@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <img 
-                src="/logo-amka.jpg" 
+                src="/logo-amka.jpeg" 
                 alt="AMKA Sourcing AND Service" 
                 className="h-12 w-auto object-contain rounded-lg"
               />
@@ -57,7 +57,7 @@ export default function Footer() {
             <div className="flex flex-col gap-3">
               <div className="bg-slate-900 border border-slate-800 p-3 rounded-xl flex items-center justify-between">
                 <img 
-                  src="/logo-maqysin.jpg" 
+                  src="/logo-maqysin.jpeg" 
                   alt="MAQYSIN" 
                   className="h-8 w-auto object-contain"
                 />
@@ -65,7 +65,7 @@ export default function Footer() {
               </div>
               <div className="bg-slate-900 border border-slate-800 p-3 rounded-xl flex items-center justify-between">
                 <img 
-                  src="/logo-movilgarage.jpg" 
+                  src="/logo-movilgarage.jpeg" 
                   alt="MOVIL GARAGE" 
                   className="h-8 w-auto object-contain"
                 />
