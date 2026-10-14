@@ -19,7 +19,7 @@ export default function Home() {
             AMKA Sourcing AND Service
           </div>
           <h1 className="text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight">
-            CONECTANDO SOLUCIONES, <br />
+            CONECTANDO SOLUCIONES <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-right from-cyan-400 via-blue-500 to-indigo-400">
               IMPULSANDO NEGOCIOS
             </span>

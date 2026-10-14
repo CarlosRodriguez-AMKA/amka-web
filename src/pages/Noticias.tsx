@@ -180,7 +180,7 @@ export default function Noticias() {
                   <p className="mt-3 text-xs text-slate-400 leading-relaxed line-clamp-3">{item.description}</p>
                 </div>
                 <div className="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
-                  <span className="font-medium text-slate-300 max-w-[140px] truncate">{item.source}</span>
+                  <span className="font-medium text-slate-300 max-width-[140px] truncate">{item.source}</span>
                   <a
                     href={item.link}
                     target="_blank"
