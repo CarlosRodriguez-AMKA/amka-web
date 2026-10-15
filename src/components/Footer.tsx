@@ -7,13 +7,16 @@ export default function Footer() {
           
           {/* Columna 1: Identidad AMKA, Redes y Socios */}
           <div className="md:col-span-5 space-y-6">
-            <div>
+            <div className="flex items-center gap-3">
               <img 
                 src="/logo-amka.png" 
                 alt="AMKA Sourcing AND Service" 
-                className="h-10 w-auto object-contain brightness-0 invert" 
+                className="h-12 w-auto object-contain brightness-0 invert" 
                 onError={(e) => { (e.target as HTMLImageElement).src = '/assets/logo-amka.png'; }}
               />
+              <span className="font-extrabold text-lg text-white">
+                AMKA <span className="text-amka-cyan text-xs font-semibold block">Sourcing AND Service</span>
+              </span>
             </div>
 
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
@@ -52,22 +55,22 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Socios con altura ampliada (h-10) */}
-            <div className="space-y-2">
+            {/* Socios con altura destacada h-14 / max-w-[140px] */}
+            <div className="space-y-2 pt-2">
               <span className="text-xs uppercase tracking-wider text-slate-500 font-bold block">
                 Socios Estratégicos
               </span>
-              <div className="flex items-center gap-5 pt-1">
+              <div className="flex items-center gap-6 pt-1 flex-wrap">
                 <img 
                   src="/logo-maqysin.png" 
                   alt="MAQYSIN" 
-                  className="h-10 w-auto object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-opacity" 
+                  className="h-14 max-width-[150px] w-auto object-contain brightness-0 invert opacity-85 hover:opacity-100 transition-opacity" 
                   onError={(e) => { (e.target as HTMLImageElement).src = '/assets/logo-maqysin.png'; }}
                 />
                 <img 
                   src="/logo-movilgarage.png" 
                   alt="MÓVIL GARAGE" 
-                  className="h-10 w-auto object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-opacity" 
+                  className="h-14 max-width-[150px] w-auto object-contain brightness-0 invert opacity-85 hover:opacity-100 transition-opacity" 
                   onError={(e) => { (e.target as HTMLImageElement).src = '/assets/logo-movilgarage.png'; }}
                 />
               </div>
