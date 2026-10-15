@@ -30,7 +30,7 @@ export default function Footer() {
               </span>
               <div className="flex items-center gap-3">
                 <a 
-                  href="https://facebook.com" 
+                  href="https://www.facebook.com/profile.php?id=61595023876085" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="px-3.5 py-2 rounded-xl bg-slate-800 border border-slate-700 hover:border-amka-cyan hover:bg-slate-700 text-slate-300 hover:text-amka-cyan text-xs font-semibold transition-all flex items-center gap-2"
@@ -42,7 +42,7 @@ export default function Footer() {
                 </a>
 
                 <a 
-                  href="https://instagram.com" 
+                  href="https://www.instagram.com/amka.sourcing.and.service/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="px-3.5 py-2 rounded-xl bg-slate-800 border border-slate-700 hover:border-amka-purple hover:bg-slate-700 text-slate-300 hover:text-amka-purple text-xs font-semibold transition-all flex items-center gap-2"
