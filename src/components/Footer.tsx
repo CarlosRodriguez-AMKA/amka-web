@@ -52,7 +52,7 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Logos de Socios Estratégicos */}
+            {/* Socios con altura ampliada (h-10) */}
             <div className="space-y-2">
               <span className="text-xs uppercase tracking-wider text-slate-500 font-bold block">
                 Socios Estratégicos
@@ -61,13 +61,13 @@ export default function Footer() {
                 <img 
                   src="/logo-maqysin.png" 
                   alt="MAQYSIN" 
-                  className="h-7 w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" 
+                  className="h-10 w-auto object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-opacity" 
                   onError={(e) => { (e.target as HTMLImageElement).src = '/assets/logo-maqysin.png'; }}
                 />
                 <img 
                   src="/logo-movilgarage.png" 
                   alt="MÓVIL GARAGE" 
-                  className="h-7 w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" 
+                  className="h-10 w-auto object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-opacity" 
                   onError={(e) => { (e.target as HTMLImageElement).src = '/assets/logo-movilgarage.png'; }}
                 />
               </div>

@@ -3,18 +3,20 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-amka-card/90 backdrop-blur-md border-b border-amka-border shadow-xs">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         
-        {/* Logotipo Oficial AMKA */}
-        <div className="flex items-center gap-3">
+        {/* Logotipo y Nombre Oficial */}
+        <a href="#inicio" className="flex items-center gap-3 group">
           <img 
             src="/logo-amka.png" 
             alt="AMKA Sourcing AND Service" 
             className="h-10 w-auto object-contain"
             onError={(e) => {
-              // Fallback por si la ruta incluye /assets/
               (e.target as HTMLImageElement).src = '/assets/logo-amka.png';
             }}
           />
-        </div>
+          <span className="font-bold text-lg tracking-wide text-amka-text group-hover:text-amka-cyan transition-colors">
+            AMKA <span className="text-amka-cyan font-semibold text-xs block -mt-1">Sourcing AND Service</span>
+          </span>
+        </a>
 
         {/* Menú de Navegación */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">

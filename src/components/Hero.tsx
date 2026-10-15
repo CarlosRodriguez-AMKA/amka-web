@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section id="inicio" className="relative py-24 md:py-32 overflow-hidden bg-amka-bg">
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 width-[600px] height-[350px] bg-gradient-to-true from-amka-purple/10 to-amka-cyan/10 blur-[100px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 width-[600px] heigth-[350px] bg-gradient-to-true from-amka-purple/10 to-amka-cyan/10 blur-[100px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10 text-center md:text-left grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
         
@@ -39,13 +39,12 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Columna Derecha: Tarjeta Corporativa y Logos de Socios */}
+        {/* Columna Derecha: Tarjeta Corporativa y Logos de Socios Agrandados */}
         <div className="md:col-span-5">
           <div className="bg-amka-card border border-amka-border p-8 rounded-3xl shadow-xl shadow-slate-200 relative">
             
             <div className="h-1 w-20 bg-gradient-to-right from-amka-cyan to-amka-purple rounded-full mb-6" />
 
-            {/* Logo de AMKA en la tarjeta */}
             <div className="mb-4">
               <img 
                 src="/logo-amka.png" 
@@ -59,20 +58,20 @@ export default function Hero() {
               Aliados estratégicos en mantenimiento pesado, sistemas hidráulicos, refacciones con garantía y pruebas no destructivas.
             </p>
 
-            {/* Logos de Socios Estratégicos */}
+            {/* Socios Estratégicos con altura ampliada (h-11 / h-12) */}
             <div className="border-t border-amka-border pt-6 space-y-3">
               <div className="text-xs uppercase tracking-wider text-slate-400 font-bold">Socios Estratégicos</div>
               <div className="flex items-center gap-6 pt-1">
                 <img 
                   src="/logo-maqysin.png" 
                   alt="MAQYSIN" 
-                  className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-80 hover:opacity-100" 
+                  className="h-11 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-90 hover:opacity-100" 
                   onError={(e) => { (e.target as HTMLImageElement).src = '/assets/logo-maqysin.png'; }}
                 />
                 <img 
                   src="/logo-movilgarage.png" 
                   alt="MÓVIL GARAGE" 
-                  className="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-80 hover:opacity-100" 
+                  className="h-11 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-90 hover:opacity-100" 
                   onError={(e) => { (e.target as HTMLImageElement).src = '/assets/logo-movilgarage.png'; }}
                 />
               </div>
