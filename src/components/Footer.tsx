@@ -55,26 +55,42 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Socios con altura destacada h-14 / max-w-[140px] */}
-            <div className="space-y-2 pt-2">
+            {/* Socios Estratégicos con Logos y Nombre Oficial abajo */}
+            <div className="space-y-3 pt-2">
               <span className="text-xs uppercase tracking-wider text-slate-500 font-bold block">
                 Socios Estratégicos
               </span>
-              <div className="flex items-center gap-6 pt-1 flex-wrap">
-                <img 
-                  src="/logo-maqysin.png" 
-                  alt="MAQYSIN" 
-                  className="h-14 max-width-[150px] w-auto object-contain brightness-0 invert opacity-85 hover:opacity-100 transition-opacity" 
-                  onError={(e) => { (e.target as HTMLImageElement).src = '/assets/logo-maqysin.png'; }}
-                />
-                <img 
-                  src="/logo-movilgarage.png" 
-                  alt="MÓVIL GARAGE" 
-                  className="h-14 max-width-[150px] w-auto object-contain brightness-0 invert opacity-85 hover:opacity-100 transition-opacity" 
-                  onError={(e) => { (e.target as HTMLImageElement).src = '/assets/logo-movilgarage.png'; }}
-                />
+              <div className="flex items-start gap-8 flex-wrap pt-1">
+                
+                {/* Socio 1: MAQYSIN */}
+                <div className="flex flex-col items-center gap-1.5 group">
+                  <img 
+                    src="/logo-maqysin.png" 
+                    alt="MAQYSIN" 
+                    className="h-12 max-width-[140px] w-auto object-contain brightness-0 invert opacity-85 group-hover:opacity-100 transition-opacity" 
+                    onError={(e) => { (e.target as HTMLImageElement).src = '/assets/logo-maqysin.png'; }}
+                  />
+                  <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider group-hover:text-amka-cyan transition-colors">
+                    MAQYSIN
+                  </span>
+                </div>
+
+                {/* Socio 2: MÓVIL GARAGE */}
+                <div className="flex flex-col items-center gap-1.5 group">
+                  <img 
+                    src="/logo-movilgarage.png" 
+                    alt="MÓVIL GARAGE" 
+                    className="h-12 max-width-[140px] w-auto object-contain brightness-0 invert opacity-85 group-hover:opacity-100 transition-opacity" 
+                    onError={(e) => { (e.target as HTMLImageElement).src = '/assets/logo-movilgarage.png'; }}
+                  />
+                  <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider group-hover:text-amka-purple transition-colors">
+                    MÓVIL GARAGE
+                  </span>
+                </div>
+
               </div>
             </div>
+
           </div>
 
           {/* Columna 2: Navegación */}
