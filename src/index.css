@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@theme {
+  --color-amka-bg: #F8FAFC;       /* Fondo general limpio (Slate muy claro) */
+  --color-amka-card: #FFFFFF;     /* Fondo de tarjetas puro blanco con sombra */
+  --color-amka-text: #0F172A;     /* Texto principal oscuro y de alta legibilidad */
+  --color-amka-cyan: #00B8AD;     /* Cyan optimizado para contraste en fondos claros */
+  --color-amka-emerald: #10B981;  /* Verde esmeralda industrial */
+  --color-amka-purple: #7C3AED;   /* Morado corporativo elegante */
+  --color-amka-muted: #64748B;    /* Texto secundario / gris corporativo */
+  --color-amka-border: #E2E8F0;   /* Bordes sutiles y limpios */
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-amka-bg);
+  color: var(--color-amka-text);
+}
