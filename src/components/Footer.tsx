@@ -5,32 +5,31 @@ export default function Footer() {
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-slate-800">
           
-          {/* Columna 1: Identidad AMKA y Redes Sociales */}
-          <div className="md:col-span-5 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-true from-amka-purple to-amka-cyan flex items-center justify-center font-black text-white text-lg shadow-md">
-                A
-              </div>
-              <span className="font-bold text-lg tracking-wide">
-                AMKA <span className="text-amka-cyan font-semibold text-xs block -mt-1">Sourcing AND Service</span>
-              </span>
+          {/* Columna 1: Identidad AMKA, Redes y Socios */}
+          <div className="md:col-span-5 space-y-6">
+            <div>
+              <img 
+                src="/logo-amka.png" 
+                alt="AMKA Sourcing AND Service" 
+                className="h-10 w-auto object-contain brightness-0 invert" 
+                onError={(e) => { (e.target as HTMLImageElement).src = '/assets/logo-amka.png'; }}
+              />
             </div>
 
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
               Soluciones integrales para la industria y minería. Asesoría comercial, mantenimiento técnico especializado y suministro de refacciones en Cananea, Sonora.
             </p>
 
-            {/* Redes Sociales Oficiales */}
-            <div className="pt-2 space-y-2">
+            {/* Redes Sociales */}
+            <div className="space-y-2">
               <span className="text-xs uppercase tracking-wider text-slate-400 font-bold block">
                 Síguenos en Redes Sociales
               </span>
               <div className="flex items-center gap-3">
                 <a 
-                  href="https://www.facebook.com/profile.php?id=61595023876085" 
+                  href="https://facebook.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  aria-label="Facebook Oficial de AMKA"
                   className="px-3.5 py-2 rounded-xl bg-slate-800 border border-slate-700 hover:border-amka-cyan hover:bg-slate-700 text-slate-300 hover:text-amka-cyan text-xs font-semibold transition-all flex items-center gap-2"
                 >
                   <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -40,10 +39,9 @@ export default function Footer() {
                 </a>
 
                 <a 
-                  href="https://www.instagram.com/amka.sourcing.and.service/" 
+                  href="https://instagram.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  aria-label="Instagram Oficial de AMKA"
                   className="px-3.5 py-2 rounded-xl bg-slate-800 border border-slate-700 hover:border-amka-purple hover:bg-slate-700 text-slate-300 hover:text-amka-purple text-xs font-semibold transition-all flex items-center gap-2"
                 >
                   <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -54,23 +52,29 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Socios Estratégicos */}
-            <div className="pt-2">
-              <span className="text-xs uppercase tracking-wider text-slate-500 font-bold block mb-2">
+            {/* Logos de Socios Estratégicos */}
+            <div className="space-y-2">
+              <span className="text-xs uppercase tracking-wider text-slate-500 font-bold block">
                 Socios Estratégicos
               </span>
-              <div className="flex gap-3">
-                <span className="px-3 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-300 text-xs font-semibold">
-                  MAQYSIN
-                </span>
-                <span className="px-3 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-300 text-xs font-semibold">
-                  MÓVIL GARAGE
-                </span>
+              <div className="flex items-center gap-5 pt-1">
+                <img 
+                  src="/logo-maqysin.png" 
+                  alt="MAQYSIN" 
+                  className="h-7 w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" 
+                  onError={(e) => { (e.target as HTMLImageElement).src = '/assets/logo-maqysin.png'; }}
+                />
+                <img 
+                  src="/logo-movilgarage.png" 
+                  alt="MÓVIL GARAGE" 
+                  className="h-7 w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" 
+                  onError={(e) => { (e.target as HTMLImageElement).src = '/assets/logo-movilgarage.png'; }}
+                />
               </div>
             </div>
           </div>
 
-          {/* Columna 2: Navegación Rápida */}
+          {/* Columna 2: Navegación */}
           <div className="md:col-span-3 space-y-3">
             <h4 className="text-sm font-bold uppercase tracking-wider text-amka-cyan">Navegación</h4>
             <ul className="space-y-2 text-sm text-slate-400">
@@ -80,36 +84,36 @@ export default function Footer() {
             </ul>
           </div>
 
-{/* Columna 3: Contacto Directo & Ubicación */}
-<div className="md:col-span-4 space-y-3">
-  <h4 className="text-sm font-bold uppercase tracking-wider text-amka-emerald">Contacto Directo</h4>
-  <div className="space-y-2 text-sm text-slate-400">
-    <p className="flex items-start gap-2">
-      <span className="text-amka-emerald font-bold">📍</span>
-      <span>Carretera Cananea - Ímuris KM1, Col. Barrilito, C.P. 84622, Cananea, Sonora.</span>
-    </p>
-    <p className="flex items-center gap-2">
-      <span className="text-amka-emerald font-bold">📞</span>
-      <a href="tel:6451109501" className="hover:text-white transition-colors">645 110 9501</a> | 
-      <a href="tel:6451073624" className="hover:text-white transition-colors">645 107 3624</a>
-    </p>
-    <p className="flex items-start gap-2">
-      <span className="text-amka-emerald font-bold mt-0.5">✉️</span>
-      <span className="flex flex-col gap-0.5">
-        <a href="mailto:serviceamka@gmail.com" className="hover:text-white transition-colors">
-          serviceamka@gmail.com
-        </a>
-        <a href="mailto:asesoriaamka@gmail.com" className="hover:text-white transition-colors">
-          asesoriaamka@gmail.com
-        </a>
-      </span>
-    </p>
-  </div>
-</div>
+          {/* Columna 3: Contacto Directo */}
+          <div className="md:col-span-4 space-y-3">
+            <h4 className="text-sm font-bold uppercase tracking-wider text-amka-emerald">Contacto Directo</h4>
+            <div className="space-y-2 text-sm text-slate-400">
+              <p className="flex items-start gap-2">
+                <span className="text-amka-emerald font-bold">📍</span>
+                <span>Carretera Cananea - Ímuris KM1, Col. Barrilito, C.P. 84622, Cananea, Sonora.</span>
+              </p>
+              <p className="flex items-center gap-2">
+                <span className="text-amka-emerald font-bold">📞</span>
+                <a href="tel:6451109501" className="hover:text-white transition-colors">645 110 9501</a> | 
+                <a href="tel:6451073624" className="hover:text-white transition-colors">645 107 3624</a>
+              </p>
+              <p className="flex items-start gap-2">
+                <span className="text-amka-emerald font-bold mt-0.5">✉️</span>
+                <span className="flex flex-col gap-0.5">
+                  <a href="mailto:serviceamka@gmail.com" className="hover:text-white transition-colors">
+                    serviceamka@gmail.com
+                  </a>
+                  <a href="mailto:asesoriaamka@gmail.com" className="hover:text-white transition-colors">
+                    asesoriaamka@gmail.com
+                  </a>
+                </span>
+              </p>
+            </div>
+          </div>
 
         </div>
 
-        {/* Derechos de Autor */}
+        {/* Pie de derechos */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <p>© {new Date().getFullYear()} AMKA Sourcing AND Service. Todos los derechos reservados.</p>
           <p className="text-slate-600">Cananea, Sonora, México</p>

@@ -3,14 +3,17 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-amka-card/90 backdrop-blur-md border-b border-amka-border shadow-xs">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         
-        {/* Logotipo */}
+        {/* Logotipo Oficial AMKA */}
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-true from-amka-purple to-amka-cyan flex items-center justify-center font-black text-white text-xl shadow-md shadow-amka-purple/20">
-            A
-          </div>
-          <span className="font-bold text-lg tracking-wide text-amka-text">
-            AMKA <span className="text-amka-cyan font-semibold text-xs block -mt-1">Sourcing AND Service</span>
-          </span>
+          <img 
+            src="/logo-amka.png" 
+            alt="AMKA Sourcing AND Service" 
+            className="h-10 w-auto object-contain"
+            onError={(e) => {
+              // Fallback por si la ruta incluye /assets/
+              (e.target as HTMLImageElement).src = '/assets/logo-amka.png';
+            }}
+          />
         </div>
 
         {/* Menú de Navegación */}
@@ -26,7 +29,7 @@ export default function Navbar() {
           </a>
         </nav>
 
-        {/* Botón de Contacto Directo */}
+        {/* Botón de Contacto */}
         <a 
           href="https://wa.me/526451109501" 
           target="_blank" 
