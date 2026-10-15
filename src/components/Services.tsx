@@ -1,5 +1,3 @@
-import React from 'react';
-
 // 1. Definimos la interfaz para tipar los servicios de AMKA
 interface ServiceItem {
   id: string;
